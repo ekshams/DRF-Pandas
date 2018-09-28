@@ -42,7 +42,7 @@ def product_up(request):
     serializer = ProductSerializer(qs, many=True)
     return Response(serializer.data)
 
-
+# Pandas Integration.
 @api_view(['GET'])
 def data_test(request):
     val = quickstart.bl.pandas_example.get_data()
